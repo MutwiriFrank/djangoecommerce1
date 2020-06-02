@@ -119,3 +119,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
+MEDIA_URL = '/images/'  # this one will assist the browser to see the image once url for the image is entered
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')  # our images will come here once we upload them
