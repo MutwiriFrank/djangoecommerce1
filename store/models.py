@@ -86,7 +86,7 @@ class ShippingAddress(models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True)
     order = models.ForeignKey(Order, on_delete=models.SET_NULL, null=True)
     location = models.CharField(max_length=103, blank=False, null=False)
-    street = models.CharField(max_length=130, null=False)
+    road = models.CharField(max_length=130, null=False)
     landmark = models.CharField(max_length=130, null=False)
     date_added = models.DateTimeField(auto_now_add=True)
 
